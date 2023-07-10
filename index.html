@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="sweetalert-dev.js" ></script>
+    <link rel=”stylesheet” href=” sweetalert.css”>
+    <script src="alert/dist/sweetalert-dev.js"></script> -->
+    <!-- <link rel="stylesheet" href="alert/dist/sweetalert.css"> -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
@@ -21,10 +26,10 @@
         <div class="container-fluid m-0 p-0">
             <Nav>
                 <!-- <img src="" alt=""> -->
-                    <div class=" bg-primary-subtle d-sm-none d-md-block">
-                        <marquee direction="left" class="fw-semibold"> sale! | Hurry Up!!</marquee>
-                    </div>
-                
+                <div class=" bg-primary-subtle d-sm-none d-md-block">
+                    <marquee direction="left" class="fw-semibold"> sale! | Hurry Up!!</marquee>
+                </div>
+
                 <div class="container-fluid p-0 bg-primary shadow ">
                     <nav class="navbar navbar-expand-md">
                         <div class="container-fluid d-flex">
@@ -53,14 +58,24 @@
                                     </li>
                                 </ul>
                                 <div class="d-flex align-items-center me-3">
-                                    <a href="#" class=" nav-item nav-link fw-bold text-white pe-2">
+                                    <button type="button" class="btn btn-primary position-relative">
+                                        <a href="./cart.html" class=" nav-item nav-link fw-bold text-white ">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+                                        </a><span
+                                            class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2">
+                                            <p class="m-0" id="increment">0</p>
+                                        </span>
+                                    </button>
+                                    <!-- <a href="#" class=" nav-item nav-link fw-bold text-white pe-2">
                                         <span class="material-symbols-outlined">
                                             shopping_cart
                                         </span>
-                                    </a>
-                                    <a href="#" class=" nav-item nav-link fw-bold text-white">
+                                    </a> -->
+                                    <!-- <a href="#" class=" nav-item nav-link fw-bold text-white">
                                         Cart
-                                    </a>
+                                    </a> -->
                                 </div>
 
                             </div>
@@ -87,7 +102,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-primary mx-1">Buy</button>
-                                    <span class=" material-symbols-outlined btn">
+                                    <span class=" material-symbols-outlined btn" id="cartBtn">
                                         add_shopping_cart
                                     </span>
                                 </div>
@@ -111,7 +126,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-primary mx-1">Buy</button>
-                                    <span class=" material-symbols-outlined btn">
+                                    <span class=" material-symbols-outlined btn" id="cartBtn1">
                                         add_shopping_cart
                                     </span>
                                 </div>
@@ -134,7 +149,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-primary mx-1">Buy</button>
-                                    <span class=" material-symbols-outlined btn">
+                                    <span class=" material-symbols-outlined btn" id="cartBtn2">
                                         add_shopping_cart
                                     </span>
                                 </div>
@@ -157,7 +172,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-primary mx-1">Buy</button>
-                                    <span class=" material-symbols-outlined btn">
+                                    <span class=" material-symbols-outlined btn" id="cartBtn3">
                                         add_shopping_cart
                                     </span>
                                 </div>
@@ -180,7 +195,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-primary mx-1">Buy</button>
-                                    <span class=" material-symbols-outlined btn">
+                                    <span class=" material-symbols-outlined btn" id="cartBtn4">
                                         add_shopping_cart
                                     </span>
                                 </div>
@@ -203,7 +218,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-primary mx-1">Buy</button>
-                                    <span class=" material-symbols-outlined btn">
+                                    <span class=" material-symbols-outlined btn" id="cartBtn5">
                                         add_shopping_cart
                                     </span>
                                 </div>
@@ -226,7 +241,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-primary mx-1">Buy</button>
-                                    <span class=" material-symbols-outlined btn">
+                                    <span class=" material-symbols-outlined btn" id="cartBtn6">
                                         add_shopping_cart
                                     </span>
                                 </div>
@@ -249,7 +264,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-primary mx-1">Buy</button>
-                                    <span class=" material-symbols-outlined btn">
+                                    <span class=" material-symbols-outlined btn" id="cartBtn7">
                                         add_shopping_cart
                                     </span>
                                 </div>
@@ -268,6 +283,7 @@
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./HomePage.js"></script>
 
 </body>
 
